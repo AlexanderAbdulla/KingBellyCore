@@ -12,7 +12,9 @@ namespace KingBellyCore.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+
+            RestaurantList restaurantList = new RestaurantList();
+            return View(restaurantList);
         }
 
         public IActionResult About()
